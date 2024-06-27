@@ -1,0 +1,264 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--body-color);
+    width: 100%;
+}
+
+
+:root {
+    --header-color: #111111;
+    --body-color: #0E0E0E;
+    --letras-cor: #E0DCDC;
+    --footer-color: #090909;
+    --section-color: #434040;
+    --post-color: #0D0B0B;
+    --divs-color: #171515;
+    --div-comentario: #171515;
+    --div_Perfil_Chat: #141414;
+}
+
+#header {
+    width: 100%;
+    height: 50px;
+    background-color: var(--header-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+#nav-btn {
+    display: flex;
+    gap: 13px;
+}
+
+.btn {
+    display: flex;
+    font-size: 15px;
+    border: none;
+    background: none;
+    color: #fff;
+    padding: 4px;
+    cursor: pointer;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+/* Div perfil */
+
+.perfilDiv{
+    width: 300px;
+    height: 300px;
+    background-color: var(--div_Perfil_Chat);
+    color: #fff;
+    position: absolute;
+    top: 55px;
+    right: 15px;
+    border-radius: 8px;
+    display: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    height: 100%;
+    justify-content: center;
+
+}
+
+.perfil_img {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#imgPerfil {
+    width: 65px;
+    height: 65px;
+}
+
+.userName {
+    text-align: center;
+}
+
+.login_criar .ul {
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+.ul .li a {
+    text-decoration: none;
+    color: #fff;
+    /* background-color: deeppink; */
+    padding: 8px;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    border: 1px solid #4b4b4b;
+
+}
+
+.perfilDivAtivar {
+    display: block;
+    z-index: 1000;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+
+
+/* Chats */
+
+.chats {
+    width: 300px;
+    height: 300px;
+    background-color: var(--div_Perfil_Chat);
+    border-radius: 8px;
+    position: absolute;
+    top: 55px;
+    right: 15px;
+    border: 1px solid #434343;
+    display: none;
+    z-index: 999;
+}
+
+.container_chats { 
+    height: 100%;
+}
+.container_chats .ul_chat {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+}
+
+.ul_chat li {
+    list-style: none;
+}
+
+.ul_chat li a {
+    text-decoration: none;
+    font-size: 14px;
+    /* background-color: #fff; */
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 8px 13px;
+    color: #fff;
+    border: 1px solid #4b4b4b;
+}
+
+.chatAtivar {
+    display: block;
+}
+
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+
+
+
+
+
+
+
+.card {
+    background-color: var(--divs-color);
+    color: var(--letras-cor);
+}
+
+.btn-verMais {
+    background-color: #312f2f;
+}
+
+#footer {
+    width: 100%;
+    background-color: var(--footer-color);
+    color: var(--letras-cor);
+}
+
+#direitos {
+    background-color: var(--footer-color);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+#direitos p {
+    font-size: 13px;
+}
+
+#footer {
+    height: 318px;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+
+.redes-socias {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.socias {
+    display: flex;
+    justify-content: space-between;
+}
+
+.socias a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.ajuda {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+}
+
+.span {
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+.section3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section3 img {
+    width: 100px;
+    height: 100px;
+
+}
+

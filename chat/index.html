@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="/css/chat_msg/chat.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <main id="main">
+        <div class="add_back">
+            <button class="btn"><ion-icon name="chevron-back-outline"></ion-icon></button>
+            <button id="abrir" class="btn btnMais"><i class="bi bi-plus-lg"></i></button>
+        </div>
+
+        <!-- segunda div -->
+        <div id="adicionar" class="add_enter">
+            <button class="btn_2">Entrar</button>
+            <button class="btn_2">Criar sala</button>
+        </div>
+
+        <!-- terceira dib -->
+
+        <div class="search_chat">
+            <input type="text" name="chat" id="inputSearch" class="search" placeholder="Pesquisar...">
+            <!-- depois adiciono a lupa -->
+        </div>
+
+        <section id="section_chat">
+            <!-- Primeiro grupo -->
+            <div class="chat_gp">
+                <div class="img_gp">
+                    <img src="/img/users/imagem ilustrativa do grupo.jpg" alt="">
+                </div>
+                <div class="name_user_msg">
+                    <span class="user">Nome:</span>
+                    <span class="user_msg">Usuário 87: Ameixa</span>
+                </div>
+                <div class="msgs">
+                    <span class="qtq">90+</span>
+                </div>
+            </div>
+
+            <div class="chat_gp">
+                <div class="img_gp">
+                    <img src="/img/users/imagem ilustrativa do grupo.jpg" alt="">
+                </div>
+                <div class="name_user_msg">
+                    <span class="user">Nome:</span>
+                    <span class="user_msg">Usuário 87: Ameixa</span>
+                </div>
+                <div class="msgs">
+                    <span class="qtq">90+</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+
+    <!-- Dialog  -->
+    <div class="dialog">
+        <div class="container">
+
+            <div class="nome">
+                <span class="span">
+                    Nome da sala:
+                </span>
+            </div>
+
+            <div class="input_btn">
+                <input type="text" name="" id="" class="input">
+                <button type="submit" class="btnDialog">Criar sala</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Depois crio esse dialog -->
+    <!-- <div class="nada">
+
+    </div> -->
+
+    <!-- nada com nada -->
+     <!-- para baixar algo utilize o atributo dowload na a -->
+
+    <script src="/javascript/chatjs/chat.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

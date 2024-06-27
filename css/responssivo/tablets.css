@@ -1,0 +1,129 @@
+@media (min-width: 550px) and (max-width: 744px) {
+    #header {
+        padding: 0 20px 0 20px;
+        gap: 10px;
+    }
+    .menu {
+        display: none;
+    }
+    .logo {
+        flex-grow: 1;
+    }
+    .section-search {
+        position: absolute;
+        top: 60px;
+        left: 50%;
+        right: 50%;
+        justify-content: center;
+        align-items: center;
+        display: none;
+    }
+
+    .searchActive {
+        display: flex;
+    }
+
+    .form-search {
+        background-color: #111;
+        padding: 25px;
+        border-radius: 10px;
+        display: flex;
+        border: 1px solid #434343;
+    }
+
+    .inputPesquisa {
+        padding: 5px;
+        border: none;
+        background: #222;
+        color: #fff;
+        border-radius: 5px 0 0 5px;
+    }
+
+    .btn-search-submite {
+        padding: 5px;
+        display: flex;
+        border: none;
+        background: #fff;
+        color: #000;
+        border-radius: 0 3px 3px 0;
+
+    }
+
+    #div-menu ul {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+
+    }
+    #div-menu ul li {
+        list-style: none;
+    }
+    #div-menu ul li .link-mtr{
+        display: flex;
+        align-items: flex-end;
+        gap: 5px;
+    }
+    #div-menu ul li a{
+        text-decoration: none;
+        color: #fff;
+        padding: 4px;
+    }
+
+
+    /*  */
+    /*  */
+    /*  */
+    /*  */
+    /*  */
+    #main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        padding: 25px;
+    }
+
+    .card-pai {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        border-radius: 10px;
+        gap: 8px;
+    }
+
+    .tlt2 h2 {
+        color: #fff;
+        margin: 30px 0 30px 0;
+    }
+
+    .img-card img {
+        width: 100%;
+        border-radius: 8px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .btn-verMais {
+        width: 90px;
+        height: 35px;
+        border: none;
+        border-radius: 7px
+    }
+
+    .btn-verMais a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    #footer {
+        display: flex;
+        align-items: center;
+    }
+
+};

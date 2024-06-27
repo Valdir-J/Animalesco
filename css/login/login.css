@@ -1,0 +1,276 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --container_Color: #080808;
+    --inputs_color: #191818;
+    --color_a: #FF002E;
+}
+
+@media (max-width: 550px) {
+    #main {
+        background: #000;;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+    }
+
+    #login {
+        width: 100%;
+    }
+
+    .container {
+        background-color: var(--container_Color);
+        padding: 40px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        border-radius: 10px;
+        color: #fff;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px
+    }
+
+    .logo img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        padding: 10px 0 5px 0;
+    }
+
+    .inputs_label {
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+    }
+
+    .label {
+        padding-left: 2px;
+    }
+
+    .usuario, .senha {
+        height: 28px;
+        border: none;
+        border-radius: 4px;
+        background: var(--inputs_color); 
+        color: #fff;
+        padding: 10px;
+    }
+
+    .subBTN {
+        width: 100%;
+        height: 33px;
+        border: none;
+        background-color: #fff;
+        border-radius: 6px;
+        padding: 10px 0;
+    }
+
+    #senha_reset {
+        display: flex;
+        justify-content: center;
+    }
+
+    #senha_reset p a {
+        color: var(--color_a);
+    }
+}
+
+@media (min-width: 550px) and (max-width: 1024px) {
+    #main {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        background-color: #000;
+    }
+    
+    .container {
+        width: 500px;
+        border-radius: 10px;
+        background-color: var(--container_Color);
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        color: #fff;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 25px;
+    }
+
+    .linha {
+        border-bottom: 1px solid #dfdfdf;
+    }
+
+    .logo img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 0;
+    }
+
+    .inputs_label {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .label {
+        padding-left: 2px;
+    }
+
+    .usuario, .senha {
+        height: 45px;
+        border: none;
+        border-radius: 6px;
+        background: var(--inputs_color); 
+        color: #fff;
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    .subBTN {
+        width: 100%;
+        height: 45px;
+        border: none;
+        border-radius: 6px;
+        font-size: 1em;
+    }
+
+    #senha_reset {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    #senha_reset p a {
+        color: var(--color_a)
+    }
+}
+
+@media (min-width: 1024px) {
+    #main {
+        width: 100%;
+        height: 100vh;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        background-color: #fff;
+        display: grid;
+        grid-template-areas: 
+        "a a b b"
+        "c c b b"
+        "d d b b"
+        ;
+        padding: 50px;
+        gap: 50px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 10px;
+    }
+
+    .logo {
+        grid-area: b;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .logo p {
+        font-size: 25px;
+    }
+
+    .logo img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .inputs {
+        grid-area: a;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 350px;
+        padding-top: 40px;
+    }
+
+    .inputs_label {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .label {
+        font-size: 20px;
+    }
+
+    .usuario, .senha {
+        height: 35px;
+        border: 1px solid k#969696;
+        border-radius: 7px;
+        padding: 7px;
+        font-size: 17px;
+    }
+
+    .btn_login {
+        grid-area: c;
+    }
+
+    .subBTN {
+        width: 100%;
+        height: 35px;
+        border-radius: 7px;
+        border: none;
+        font-size: 1em;
+        background-color: #000;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .senha_reset {
+        grid-area: d;
+        display: flex;
+        justify-content: center;
+    }
+
+    .senha_reset p {
+        font-size: 20px;
+    }
+
+    .senha_reset p a {
+        color: var(--color_a);
+    }
+}

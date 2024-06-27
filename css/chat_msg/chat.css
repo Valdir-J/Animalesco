@@ -1,0 +1,202 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color_border_search: #727272;
+    --color_border_chat: #E0E0E0;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 16px;
+}
+
+.add_back {
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* seção entrar ou criar */
+
+.add_enter {
+    display: none;
+    width: 100%;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 0 5px;
+}
+
+.add_enter_active {
+    display: flex;
+}
+
+.btn_2 {
+    height: 25px;
+    font-size: 11px;
+    border: 1px solid #000;
+    border-radius: 6px;
+    width: 100%;
+    background: none;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    font-size: 1.2em;
+    border: none;
+    background: none;
+
+}
+
+/* área de pesquisa  */
+.search_chat {
+    width: 100%;
+    display: flex;
+    padding: 1px 5px;
+}
+
+.search {
+    width: 100%;
+    height: 25px;
+    border: 1px solid var(--color_border_search);
+    border-radius: 5px;
+    padding: 4px 8px;
+}
+
+.search::placeholder {
+    font-size: 11px;
+    color: #9F9999;
+}
+
+
+/* seção grupos */
+
+#section_chat {
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.chat_gp {
+    width: 100%;
+    display: flex;
+    height: 70px;
+    border-radius: 6px;
+    padding: 7px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2px;
+    border: 1px solid var(--color_border_chat);
+}
+
+.img_gp {
+    height: 100%;
+}
+
+.img_gp img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.name_user_msg {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.user {
+    font-size: 0.9em;
+}
+
+.user_msg {
+    font-size: .95em;
+}
+
+.msgs {
+    height: 100%;
+    padding: 4px;
+}
+
+
+/* dialog */
+.dialog {
+    width: 300px;
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    position: absolute;
+    right: 50%;
+    /* bottom: 50% */
+    transform: translate(50%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #000;
+}
+
+.span {
+    font-size: 14px;
+}
+
+.input_btn {
+    display: flex;
+    height: 30px;
+    gap: 5px;
+}
+
+.input {
+    width: 188px;
+    border: 1px solid #9F9F9F;
+    background: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.input:focus {
+    border: 1px solid deeppink;
+}
+
+.btnDialog {
+    width: 75px;
+    border: 1px solid #9F9F9F;
+    background: none;
+    font-size: 11px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+/*  Fundo opaco quando o dialog estive aberto */
+
+/* .nada {
+    width: 100%;
+    height: 100dvh;
+    background: rgb(22, 22, 21);
+    opacity: .8;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+} */

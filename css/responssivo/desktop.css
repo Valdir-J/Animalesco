@@ -1,0 +1,133 @@
+@media (min-width: 1024px) {
+    .menu {
+        display: none;
+    }
+
+    .nav-search  {
+        display: none;
+    }
+
+    .logo {
+        flex-grow: 1;
+    }
+
+    .logo img {
+        width: 45px;
+        height: 45px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    #header {
+        padding: 0 20px;
+        gap: 20px;
+    }
+
+    .form-search {
+        display: flex;
+    }
+
+    .inputPesquisa {
+        padding: 5px;
+        border: none;
+        border-radius: 4px 0 0 4px;
+    }
+
+    .btn-search-submite {
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        border-radius: 0 4px 4px 0;
+        color: #fff;
+        font-size: 1em;
+        background-color: #222;
+    }
+
+    #div-menu ul {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+
+    }
+    #div-menu ul li {
+        list-style: none;
+    }
+    #div-menu ul li .link-mtr{
+        display: flex;
+        align-items: flex-end;
+        gap: 5px;
+    }
+    #div-menu ul li a{
+        text-decoration: none;
+        color: #fff;
+        padding: 4px;
+    }
+
+
+    /*  */
+    /*  */
+    /*  */
+    /*  */
+    /*  */
+    /*  */
+    /*  */
+    
+    
+    #main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        padding: 25px;
+    }
+
+    .tlt2 h2 {
+        color: #fff;
+    }
+
+    .card-pai {
+        width: 100%;
+        display: grid;
+        grid-template-columns:  repeat(auto-fill, minmax(200px, 1fr));
+        gap: 25px;
+        padding: 20px;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .img-card img {
+        width: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .btn-verMais {
+        width: 70px;
+        height: 35px;
+        border-radius: 10px;
+        border: none;    
+    } 
+
+    .btn-verMais a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 13px;
+    }
+
+    #footer {
+        height: 150px;
+        padding: 25px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}

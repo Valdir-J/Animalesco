@@ -1,0 +1,718 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --post-color: #0D0B0B;
+    --border_color:  #666262;
+    --div-comentario: #171515;
+}
+
+/* Removendo o aumentar ou diminuir */
+
+/* .comentarioText {
+    resize: none;
+} */
+
+
+
+@media (max-width: 550px) {
+    #main_assunto {
+        background-color: var(--post-color);
+        padding: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    
+    #conteudoPrincipal {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    #principal {
+        /* background-color: */
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .user_date {
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+    }
+    .date {
+        font-size: 11px;
+    }
+
+    .user {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .name_user {
+        font-size: 12px;
+    }
+
+    .img_user {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+
+    .assunto_principal {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        color: #fff;
+    }
+
+    .assunto_principal .tltH3 {
+        font-size: 1em;
+    }
+
+    .img_assunto {
+        width: 100%;
+        height: 235px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 10px;
+    }
+
+    .para {
+        line-height: 20px;
+        font-size: 13px;
+        color: #F7F7F7;
+    }
+
+    .para1 {
+        text-indent: 20px;
+    }
+    
+ 
+     /* */
+     /*  */
+     /*  */
+     /*  */
+    /* seção comentários */
+
+    #tlt_comentarios {
+        padding: 50px 0 20px 5px;
+        color: #fff
+    }
+
+
+    #coments {
+        background-color: var(--div-comentario);
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .comentar {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        color: #fff;
+    }
+
+    .user_Name {
+        display: flex;
+        gap: 5px;
+        align-items: end;
+    }
+
+    .user_Name span {
+        font-size: 13px;
+    }
+
+    .user_Name img {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+    }
+
+    .comentarioText {
+        width: 100%;
+        border: 1px solid var(--border_color);
+        padding: 7px;
+        border-radius: 7px;
+        background: none;
+        color: #fff;
+    }
+
+    .button_enviar {
+        display: flex;
+        justify-content: end;
+    }
+
+    .btnEnviar {
+        border: none;
+        padding: 5px;
+        border-radius: 3px;
+        width: 60px;
+    }
+
+    /*  */
+    /*  */
+    /*  */
+    /*  */
+    /*  */
+    
+    /* Seção comentário dos usuários */
+    #comentarios {
+        background-color: var(--div-comentario);
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .comentarios_usuarios {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+        color: #fff;
+    }
+
+    .name_User {
+        display: flex;
+        gap: 5px;
+        align-items: end;
+    }
+
+    .name_User img {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+    }
+
+    .comentarioOFUsuario {
+        width: 100%;
+        height: auto;
+        padding: 20px 5px;
+    }
+
+    .conteudo_do_comentario {
+        font-size: 12px;
+    }
+
+    .responder_like {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* botões */
+
+    .btnResponder {
+        border: none;
+        padding: 5px;
+        border-radius: 6px;
+    }
+
+    .button_like-Not {
+        display: flex;
+        gap: 20px
+    }
+
+    .bTN {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1em;
+        border: none;
+        background: none;
+        color: #fff;
+    }
+
+    
+    .anuncios {
+        display: none;
+    }
+}
+
+
+/*  */
+/*  */
+/*  */
+
+/*  */
+
+
+/* Versão Tablets */
+
+@media (min-width: 550px) and (max-width: 1024px) {
+    #main_assunto {
+        background-color: var(--post-color);
+        padding: 50px;
+        width: 100%;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #conteudoPrincipal {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    #principal {
+        /* background-color: */
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .user_date {
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+    }
+    .date {
+        font-size: 11px;
+    }
+
+    .user {
+        display: flex;
+        gap: 10px;
+        align-items: end;
+    }
+
+    .name_user {
+        font-size: 15px;
+        padding-bottom: 5px; 
+    }
+
+    .img_user {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+    }
+
+    .assunto_principal {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        color: #fff;
+    }
+
+    .assunto_principal .tltH3 {
+        font-size: 20px;
+    }
+
+    .img_assunto {
+        width: 100%;
+        max-height: 300px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 10px;
+    }
+
+    .para {
+        line-height: 30px;
+        font-size: 16px;
+        color: #F7F7F7;
+    }
+
+    .para1 {
+        text-indent: 20px;
+    }
+    
+ 
+     /* */
+     /*  */
+     /*  */
+     /*  */
+    /* seção comentários */
+
+    #tlt_comentarios {
+        padding: 50px 0 20px 5px;
+        color: #fff
+    }
+
+
+    #coments {
+        background-color: var(--div-comentario);
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .comentar {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        color: #fff;
+    }
+
+    .user_Name {
+        display: flex;
+        gap: 5px;
+        align-items: end;
+    }
+
+    .user_Name span {
+        font-size: 14px;
+    }
+
+    .user_Name img {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+    }
+
+    .comentarioText {
+        width: 100%;
+        border: 1px solid var(--border_color);
+        padding: 7px;
+        border-radius: 7px;
+        background: none;
+        color: #fff;
+    }
+
+    .button_enviar {
+        display: flex;
+        justify-content: end;
+    }
+
+    .btnEnviar {
+        border: none;
+        padding: 5px;
+        border-radius: 3px;
+        width: 60px;
+    }
+
+    /*  */
+    /*  */
+    /*  */
+    /*  */
+    /*  */
+    
+    /* Seção comentário dos usuários */
+    #comentarios {
+        background-color: var(--div-comentario);
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .comentarios_usuarios {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+        color: #fff;
+    }
+
+    .name_User {
+        display: flex;
+        gap: 5px;
+        align-items: end;
+        font-size: 14px;
+    }
+
+    .name_User img {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+    }
+
+    .comentarioOFUsuario {
+        width: 100%;
+        height: auto;
+        padding: 20px 5px;
+    }
+
+    .conteudo_do_comentario {
+        font-size: 14px;
+    }
+
+    .responder_like {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* botões */
+
+    .btnResponder {
+        border: none;
+        padding: 5px;
+        border-radius: 6px;
+    }
+
+    .button_like-Not {
+        display: flex;
+        gap: 20px
+    }
+
+    .bTN {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 19px;
+        border: none;
+        background: none;
+        color: #fff;
+    }
+
+    .anuncios {
+        display: none;
+    }
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+/*  */
+/* */
+
+/* Css desktop */
+
+@media (min-width: 1024px) {
+
+    #main_1 {
+        display: flex;
+    }
+
+
+    #main_assunto {
+        background-color: var(--post-color);
+        padding: 50px 50px 50px 100px;
+        width: calc(100% - 35%);
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #conteudoPrincipal {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    #principal {
+        /* background-color: */
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .user_date {
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+    }
+    .date {
+        font-size: 11px;
+    }
+
+    .user {
+        display: flex;
+        gap: 10px;
+        align-items: end;
+    }
+
+    .name_user {
+        font-size: 15px;
+        padding-bottom: 5px; 
+    }
+
+    .img_user {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+    }
+
+    .assunto_principal {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        color: #fff;
+    }
+
+    .assunto_principal .tltH3 {
+        font-size: 20px;
+    }
+
+    .img_assunto {
+        width: 100%;
+        max-height: 300px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 10px;
+    }
+
+    .para {
+        line-height: 30px;
+        font-size: 1.09375rem;
+        color: #F7F7F7;
+    }
+
+    .para1 {
+        text-indent: 20px;
+    }
+    
+ 
+     /* */
+     /*  */
+     /*  */
+     /*  */
+    /* seção comentários */
+
+    #tlt_comentarios {
+        padding: 50px 0 20px 5px;
+        color: #fff
+    }
+
+
+    #coments {
+        background-color: var(--div-comentario);
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .comentar {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        color: #fff;
+    }
+
+    .user_Name {
+        display: flex;
+        gap: 5px;
+        align-items: end;
+    }
+
+    .user_Name span {
+        font-size: 14px;
+    }
+
+    .user_Name img {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+    }
+
+    .comentarioText {
+        width: 100%;
+        border: 1px solid var(--border_color);
+        padding: 7px;
+        border-radius: 7px;
+        background: none;
+        color: #fff;
+    }
+
+    .button_enviar {
+        display: flex;
+        justify-content: end;
+    }
+
+    .btnEnviar {
+        border: none;
+        padding: 5px;
+        border-radius: 3px;
+        width: 60px;
+    }
+
+    /*  */
+    /*  */
+    /*  */
+    /*  */
+    /*  */
+    
+    /* Seção comentário dos usuários */
+    #comentarios {
+        background-color: var(--div-comentario);
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .comentarios_usuarios {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+        color: #fff;
+    }
+
+    .name_User {
+        display: flex;
+        gap: 5px;
+        align-items: end;
+        font-size: 14px;
+    }
+
+    .name_User img {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+    }
+
+    .comentarioOFUsuario {
+        width: 100%;
+        height: auto;
+        padding: 20px 5px;
+    }
+
+    .conteudo_do_comentario {
+        font-size: 14px;
+    }
+
+    .responder_like {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* botões */
+
+    .btnResponder {
+        border: none;
+        padding: 5px;
+        border-radius: 6px;
+    }
+
+    .button_like-Not {
+        display: flex;
+        gap: 20px
+    }
+
+    .bTN {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 19px;
+        border: none;
+        background: none;
+        color: #fff;
+    }
+
+
+    /* Seção anúncios */
+    .anuncios {
+        width: 35%;
+        height: inherit;
+        background-color: var(--post-color);
+    }
+}

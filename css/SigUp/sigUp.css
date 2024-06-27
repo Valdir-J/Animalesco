@@ -1,0 +1,329 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --container_Color: #080808;
+    --inputs_color: #191818;
+}
+
+@media (max-width: 550px) {
+
+    #main {
+        padding: 30px;
+        background-color: #000;
+        height: 100vh;
+    }
+    
+    #sigUp {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .container {
+        background-color: #080808;
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        border-radius: 10px;
+        color: #fff;
+    }
+    
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    
+    .logo img {
+        width: 150px;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    .inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    
+    .inputs .label-inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+    }
+    
+    .label-inputs label {
+        padding: 0 0 0 2px;
+    }
+
+    
+    .usuario, .email, .senha { 
+        height: 28px;
+        background-color: var(--inputs_color);
+        border: none;
+        border-radius: 6px;
+    }
+    
+    #check_btn {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .checkbox {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    .label_checkbox {
+        font-size: 12px;
+    }
+    
+    .btn_submit .btn_sub {
+        width: 80px;
+        height: 30px;
+        border: 1px solid #222;
+        padding: 5px;
+        background-color: #fff;
+        font-size: 12px;
+        color: #000;
+        border-radius: 7px;
+    }
+    
+    .para_login {
+        margin: 20px 0;
+    }
+    
+    .para_login p {
+        text-align: center;
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    .para_login a {
+        color: #FF002E;
+    }
+}
+
+@media (min-width: 550px) and (max-width: 1024px) {
+    #main {
+        width: 100%;
+        height: 100vh;
+        background-color: #000;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #sigUp {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .container {
+        min-width: 500px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        background-color: var(--container_Color);
+        padding: 50px;
+        border-radius: 10px;
+        color: #fff;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 0;
+    }
+    
+    .logo img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .inputs .label-inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    .label-inputs .label {
+        padding: 0 0 0 3px;
+    }
+
+    .usuario, .email, .senha {
+        height: 45px;
+        padding: 10px;
+        border: none;
+        border-radius: 6px;
+        background-color: var(--inputs_color);
+        color: #fff;
+        font-size: 1em;
+    }
+
+    #check_btn {
+        display: flex;
+        justify-content: space-between;       
+    }
+
+    .checkbox {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+    }
+
+    .btn_sub {
+        width: 100px;
+        height: 35px;
+        padding: 7px;
+        border-radius: 7px;
+        border: none;
+    }
+
+    .para_login {
+        margin: 20px 0;
+    }
+    
+    .para_login p {
+        text-align: center;
+        padding: 10px;
+        font-size: 18px;
+    }
+    
+    .para_login a {
+        color: #FF002E;
+    }
+}
+
+@media (min-width: 1024px) {
+    #main {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-areas: 
+        "a a b b"
+        "a a b b"
+        "c c d d"
+        ;
+        padding: 20px;
+        border-radius: 10px;
+        gap: 50px;
+        box-shadow: 0px 2px 14px rgba(47, 47, 47, 0.2);
+    }
+
+    .logo {
+        display: flex;
+        grid-area: a;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .logo img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .logo .paragrafo {
+        font-size: 25px;
+    }
+
+    .inputs {
+        width: 350px;
+        grid-area: b;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: space-around;
+        margin: 30px 0 0 0;
+    }
+
+    .label-inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .label {
+        font-size: 20px;
+    }
+
+    .label-inputs > input {
+        height: 35px;
+        border-radius: 7px;
+        padding: 7px;
+        font-size: 17px;
+        border: 1px solid #8f8b8b;
+    }
+
+    .check_btn {
+        grid-area: d;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .checkbox {
+        display: flex;
+        gap: 9px;
+    }
+/* 
+    #checkbox {
+    } */
+
+    .btn_sub {
+        width: 100%;
+        height: 35px;
+        cursor: pointer;
+        border: none;
+        border-radius: 7px;
+        background-color: #FF002E;
+        color: #fff;
+        font-size: 1em;
+        margin-bottom: 30px;
+    }
+
+    .para_login {
+        grid-area: c;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .para_login p {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .para_login .tlt a {
+        color: #FF002E;
+    }
+
+
+
+
+}
